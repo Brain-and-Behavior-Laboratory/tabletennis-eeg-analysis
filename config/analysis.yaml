@@ -1,0 +1,73 @@
+analysis:
+  sampling_frequency_hz: 250.0
+  preprocessing:
+    l_freq_hz: 1.0
+    h_freq_hz: 45.0
+    boundary_padding_seconds: 2.0
+    average_reference_scalp_only: true
+    filter_scalp_and_noise_only: true
+  saved_epoch:
+    tmin_seconds: -1.5
+    tmax_seconds: 1.0
+    baseline: null
+  windows:
+    pre_hit:
+      tmin_seconds: -1.0
+      tmax_seconds: -0.2
+    impact:
+      tmin_seconds: -0.2
+      tmax_seconds: 0.3
+    post_hit:
+      tmin_seconds: 0.3
+      tmax_seconds: 1.0
+    peri_hit_2s:
+      tmin_seconds: -1.0
+      tmax_seconds: 1.0
+  contexts:
+    human_opponent_trial_types:
+      - cooperative
+      - competitive
+    ball_machine_trial_types:
+      - moving_serve
+      - stationary_serve
+      - moving_hit
+      - stationary_hit
+    event_values:
+      subject_hit: Subject_hit
+      subject_receive: Subject_receive
+  frequency_bands_hz:
+    theta: [4.0, 7.0]
+    alpha: [8.0, 13.0]
+    beta: [14.0, 30.0]
+  bandpower:
+    psd_fmin_hz: 2.0
+    psd_fmax_hz: 40.0
+    maximum_fft_length_samples: 128
+    overlap_fraction: 0.5
+    welch_window: hamming
+    save_trial_residuals: false
+  spectral_parameterization:
+    fit_frequency_range_hz: [3.0, 40.0]
+    psd_fmin_hz: 2.0
+    psd_fmax_hz: 40.0
+    welch_window: hamming
+    aperiodic_mode: fixed
+    peak_threshold_sd: 2.0
+    minimum_peak_height: 0.05
+    maximum_peak_width_hz: 8.0
+  statistics:
+    paired_test_alternative: two-sided
+    fdr_method: fdr_bh
+    minimum_paired_participants: 8
+    bootstrap_resamples: 50000
+    permutation_resamples: 50000
+    random_seed: 20260614
+    bic_tie_tolerance: 1.0e-10
+  focal_robustness_target:
+    feature: aperiodic_exponent
+    window: impact
+    region: parietal
+  broad_window_target:
+    feature: aperiodic_exponent
+    window: peri_hit_2s
+    region: parietal

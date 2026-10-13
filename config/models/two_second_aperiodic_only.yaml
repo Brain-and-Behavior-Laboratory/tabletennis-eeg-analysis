@@ -1,0 +1,9 @@
+model:
+  model_id: two_second_aperiodic_only
+  label: Two-second aperiodic-only
+  role: Aperiodic-only sensitivity analysis
+  windows: [peri_hit_2s]
+  maximum_peaks: 0
+  minimum_peak_width_hz:
+    peri_hit_2s: 0.9980039920
+  welch_overlap_fraction: 0.0

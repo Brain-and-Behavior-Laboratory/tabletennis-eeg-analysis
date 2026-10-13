@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local settings and editors
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large electrophysiology and array files
+*.set
+*.fdt
+*.fif
+*.h5
+*.npy
+*.npz
+*.pkl
+*.joblib

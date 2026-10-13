@@ -1,0 +1,9 @@
+model:
+  model_id: two_second_max6
+  label: Two-second max6
+  role: Better-resolved peri-hit sensitivity analysis
+  windows: [peri_hit_2s]
+  maximum_peaks: 6
+  minimum_peak_width_hz:
+    peri_hit_2s: 0.9980039920
+  welch_overlap_fraction: 0.0

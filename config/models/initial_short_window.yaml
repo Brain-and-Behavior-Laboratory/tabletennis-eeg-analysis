@@ -1,0 +1,11 @@
+model:
+  model_id: initial_short_window
+  label: Initial short-window specification
+  role: Initial specification and sensitivity comparator
+  windows: [pre_hit, impact, post_hit]
+  maximum_peaks: 6
+  minimum_peak_width_hz:
+    pre_hit: 1.0
+    impact: 1.0
+    post_hit: 1.0
+  welch_overlap_fraction: 0.5

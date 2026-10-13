@@ -1,0 +1,14 @@
+sensor_regions:
+  ordered_regions:
+    - frontal
+    - sensorimotor
+    - parietal
+    - posterior
+    - temporal
+    - other
+  patterns:
+    posterior: "^(O|Oz|OI|PO|PPO|POO)"
+    parietal: "^(P|CP|CPP)"
+    sensorimotor: "^(C|FC|FCC)"
+    frontal: "^(F|AF|Fp|FP|AFF|FFC)"
+    temporal: "^(T|TP|FT)"

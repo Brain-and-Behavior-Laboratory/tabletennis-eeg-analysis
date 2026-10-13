@@ -1,0 +1,31 @@
+channels:
+  noise_prefix: "N-"
+  emg_exact_labels:
+    - LISCM
+    - LSSCM
+    - LSTrap
+    - LITrap
+    - RITrap
+    - RISCM
+    - RSSCM
+    - RSTrap
+  emg_substrings:
+    - scm
+    - trap
+  motion_substrings:
+    - acc
+    - imu
+    - gyro
+    - mag
+    - syncpulse
+    - ballmachine
+    - participant_paddle
+    - researcher_paddle
+    - paddle
+    - backpack
+    - net_
+    - table_
+    - cgy-
+    - cwr-
+    - ngy-
+    - nwr-

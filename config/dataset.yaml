@@ -1,0 +1,14 @@
+dataset:
+  accession: ds004505
+  snapshot_version: "1.0.4"
+  doi: "10.18112/openneuro.ds004505.v1.0.4"
+  s3_bucket: openneuro.org
+  s3_prefix: ds004505/
+  include_patterns:
+    - participants.tsv
+    - dataset_description.json
+    - README*
+    - sub-*/eeg/*
+  expected_sha256:
+    participants.tsv: fe01b8de89c6d04ee879fc0f5183f5518d429232c494f304257682fae0530662
+    dataset_description.json: 6a0be4c2d2f1fdf2321a07d707ee2d58891ea4e3869a151077cc33b25c4336bf

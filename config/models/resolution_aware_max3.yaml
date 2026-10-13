@@ -1,0 +1,11 @@
+model:
+  model_id: resolution_aware_max3
+  label: Resolution-aware max3
+  role: Reduced-complexity sensitivity analysis
+  windows: [pre_hit, impact, post_hit]
+  maximum_peaks: 3
+  minimum_peak_width_hz:
+    pre_hit: 2.4875621891
+    impact: 3.9682539683
+    post_hit: 2.8409090909
+  welch_overlap_fraction: 0.5
